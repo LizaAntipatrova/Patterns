@@ -1,6 +1,6 @@
 package prototype;
 
-public class Rabbit extends GenusLepus implements Cloneable{
+public class Rabbit extends GenusLepus implements Cloneable {
     private String breed;
 
     public Rabbit(double weight, String color, String breed) {
@@ -8,7 +8,7 @@ public class Rabbit extends GenusLepus implements Cloneable{
         this.breed = breed;
     }
 
-    public Rabbit(Rabbit rabbit){
+    public Rabbit(Rabbit rabbit) {
         super(rabbit);
         this.breed = rabbit.breed;
     }

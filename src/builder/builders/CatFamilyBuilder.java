@@ -19,5 +19,4 @@ public abstract class CatFamilyBuilder {
     public abstract void setFeatures(String features);
 
 
-
 }
