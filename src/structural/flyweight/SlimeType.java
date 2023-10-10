@@ -1,17 +1,17 @@
 package structural.flyweight;
 
 public enum SlimeType {
-    FIRE("Red", "fire"),
-    WATER("Blue", "water"),
-    ELECTRIC("Purple", "electric"),
-    EARTHED("Brown", "earthed");
+    FIRE("Red", "fire.jpg"),
+    WATER("Blue", "water.png"),
+    ELECTRIC("Purple", "electric.png"),
+    EARTHED("Brown", "earthed.jpg");
 
-    final String element;
+    final String nameFile;
     final String color;
 
 
-    SlimeType(String element, String color) {
-        this.element = element;
+    SlimeType(String color, String element) {
+        this.nameFile = element;
         this.color = color;
     }
 }

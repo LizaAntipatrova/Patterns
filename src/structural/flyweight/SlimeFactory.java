@@ -6,9 +6,13 @@ import java.util.List;
 public class SlimeFactory {
     private static List<Slime> slimes = new ArrayList<>();
 
+    public static List<Slime> getSlimes() {
+        return slimes;
+    }
+
     public static Slime getSlime(SlimeType type){
         Slime slime = slimes.stream().
-                filter(current -> (type.element.equals(current.getElement() )
+                filter(current -> (type.nameFile.equals(current.getNameFile() )
                         && type.color.equals(current.getColor())))
                 .findFirst().orElse(null);
         if (slime == null){

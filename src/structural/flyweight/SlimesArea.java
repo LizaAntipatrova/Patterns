@@ -11,7 +11,7 @@ public class SlimesArea extends JFrame
         super(title);
     }
 
-    public static void createSlimeArea(List<Request>  requests)
+    public static void createSlimeArea(List<Request> requests)
     {
 
         var frame = new SlimesArea("SlimesArea");
@@ -27,7 +27,7 @@ public class SlimesArea extends JFrame
                     .draw(panel, request.getX(), request.getY());
         }
 
-
+ 
 
         // добавляем панель в главный фрейм (окно)
         frame.add(panel);
