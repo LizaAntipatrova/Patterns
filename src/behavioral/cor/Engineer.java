@@ -1,0 +1,17 @@
+package behavioral.cor;
+
+import java.util.Random;
+
+public class Engineer extends DecisiveComponent {
+    public Engineer() {
+        successRate = 1.7;
+    }
+
+    @Override
+    public String solveProblem(String problem) {
+        if (new Random().nextInt(0, 100) * successRate > 50) {
+            System.out.println("Problem solved by engineer");
+            return problem;
+        } else return nextInstance.solveProblem(problem);
+    }
+}

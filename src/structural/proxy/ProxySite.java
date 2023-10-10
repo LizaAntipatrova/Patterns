@@ -3,7 +3,7 @@ package structural.proxy;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProxySite implements Loginable{
+public class ProxySite implements Loginable {
 
     private Loginable site;
     private String password;
@@ -15,23 +15,23 @@ public class ProxySite implements Loginable{
 
     @Override
     public void LoginAsUser() {
-        if (checkUserPassword()){
+        if (checkUserPassword()) {
             site.LoginAsUser();
-        }else System.out.println("Wrong!");
+        } else System.out.println("Wrong!");
     }
 
     @Override
     public void LoginAsAdministrator() {
-        if (checkAdminPassword()){
+        if (checkAdminPassword()) {
             site.LoginAsAdministrator();
         } else System.out.println("Wrong!");
     }
 
-    private boolean checkAdminPassword(){
+    private boolean checkAdminPassword() {
         return password.equals("meow");
     }
 
-    private boolean checkUserPassword(){
+    private boolean checkUserPassword() {
         return password.equals("woof");
     }
 }
