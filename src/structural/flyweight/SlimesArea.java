@@ -4,15 +4,12 @@ import javax.swing.*;
 import java.util.List;
 
 
-public class SlimesArea extends JFrame
-{
-    public SlimesArea(String title)
-    {
+public class SlimesArea extends JFrame {
+    public SlimesArea(String title) {
         super(title);
     }
 
-    public static void createSlimeArea(List<Request> requests)
-    {
+    public static void createSlimeArea(List<Request> requests) {
 
         var frame = new SlimesArea("SlimesArea");
 
@@ -22,12 +19,11 @@ public class SlimesArea extends JFrame
 
         panel.setLayout(null);
 
-        for (Request request:requests) {
+        for (Request request : requests) {
             SlimeFactory.getSlime(request.getType())
                     .draw(panel, request.getX(), request.getY());
         }
 
- 
 
         // добавляем панель в главный фрейм (окно)
         frame.add(panel);

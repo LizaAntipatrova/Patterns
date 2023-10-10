@@ -23,14 +23,14 @@ public class TestSlimeArea {
                 "If you finish, enter \"-1\"");
 
 
-        try(Scanner scanner = new Scanner(System.in)) {
+        try (Scanner scanner = new Scanner(System.in)) {
             type = scanner.nextInt();
-            while (type>0){
+            while (type > 0) {
                 x = scanner.nextInt();
                 y = scanner.nextInt();
 
-                if (type == 1){
-                   requests.add(new Request(SlimeType.EARTHED, x, y));
+                if (type == 1) {
+                    requests.add(new Request(SlimeType.EARTHED, x, y));
                 } else if (type == 2) {
                     requests.add(new Request(SlimeType.ELECTRIC, x, y));
 
@@ -40,7 +40,7 @@ public class TestSlimeArea {
                 } else if (type == 4) {
                     requests.add(new Request(SlimeType.WATER, x, y));
 
-                }else{
+                } else {
                     System.out.println("unknown type");
                 }
                 type = scanner.nextInt();

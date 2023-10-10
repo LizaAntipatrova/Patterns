@@ -10,12 +10,12 @@ public class SlimeFactory {
         return slimes;
     }
 
-    public static Slime getSlime(SlimeType type){
+    public static Slime getSlime(SlimeType type) {
         Slime slime = slimes.stream().
-                filter(current -> (type.nameFile.equals(current.getNameFile() )
+                filter(current -> (type.nameFile.equals(current.getNameFile())
                         && type.color.equals(current.getColor())))
                 .findFirst().orElse(null);
-        if (slime == null){
+        if (slime == null) {
             slime = new Slime(type);
             slimes.add(slime);
         }
