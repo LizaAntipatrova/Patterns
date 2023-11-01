@@ -6,10 +6,10 @@ import creational.factory.shelter.impl.DogShelter;
 
 public class AnimalFactory {
 
-    public Animal getAnimal(AnimalSpecies species){
+    public Animal getAnimal(AnimalSpecies species) {
 
         Animal animal = null;
-        if (species == AnimalSpecies.CAT){
+        if (species == AnimalSpecies.CAT) {
             animal = new CatShelter().buyAnimal();
         } else if (species == AnimalSpecies.DOG) {
             animal = new DogShelter().buyAnimal();

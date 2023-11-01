@@ -19,4 +19,3 @@ public class TestComposite {
         System.out.println(box1.weigh());
     }
 }
-;

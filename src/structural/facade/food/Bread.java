@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Bread implements Edible {
-    private List<String> inside = new ArrayList<>();
+    private final List<String> inside = new ArrayList<>();
 
     public List<String> getInside() {
         return inside;

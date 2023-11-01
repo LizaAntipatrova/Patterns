@@ -2,11 +2,11 @@ package behavioral.state;
 
 public class Ship {
 
-    private State state;
     private final int x;
     private final int y;
     private final String orientation;
     private final int numberDecks;
+    private State state;
 
     public Ship(int x, int y, String orientation, int numberDecks) {
         this.state = new IntactState(this);

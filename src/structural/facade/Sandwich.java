@@ -7,12 +7,12 @@ import structural.facade.food.souse.impl.Ketchup;
 import java.util.List;
 
 public class Sandwich {
-    private Bread bread;
-    private Souse souse;
-    private Sausage sausage;
-    private Cheese cheese;
-    private Tomato tomato;
-    private Salad salad;
+    private final Bread bread;
+    private final Souse souse;
+    private final Sausage sausage;
+    private final Cheese cheese;
+    private final Tomato tomato;
+    private final Salad salad;
 
     public Sandwich() {
         this.bread = new Bread();
@@ -23,7 +23,8 @@ public class Sandwich {
         this.salad = new Salad();
 
     }
-    public List<String> createSandwich(){
+
+    public List<String> createSandwich() {
         bread.cutSlice();
         bread.putOn(souse);
         bread.putOn(sausage);

@@ -10,20 +10,20 @@ import creational.abstractfactory.petproduct.store.impl.PetFoodStore;
 
 public class Purchase {
 
-    public Tradeable makePurchase(PetSpecies pet, ProductTypes product){
+    public Tradeable makePurchase(PetSpecies pet, ProductTypes product) {
         AbstractPetProductsFactory factory = null;
 
-        if(pet == PetSpecies.CAT){
+        if (pet == PetSpecies.CAT) {
             factory = new CatProductsFactory();
-        }else if(pet == PetSpecies.DOG){
+        } else if (pet == PetSpecies.DOG) {
             factory = new DogProductsFactory();
         } else if (pet == PetSpecies.FROG) {
             factory = new FrogProductsFactory();
         }
 
-        if(product == ProductTypes.FOOD){
+        if (product == ProductTypes.FOOD) {
             return new PetFoodStore(factory).buyPetProduct();
-        }else {
+        } else {
             return new PetClothingStore(factory).buyPetProduct();
         }
 

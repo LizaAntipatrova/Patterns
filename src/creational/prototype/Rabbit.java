@@ -1,7 +1,7 @@
 package creational.prototype;
 
 public class Rabbit extends GenusLepus implements Cloneable {
-    private String breed;
+    private final String breed;
 
     public Rabbit(double weight, String color, String breed) {
         super(weight, color);

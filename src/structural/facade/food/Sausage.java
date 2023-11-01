@@ -1,6 +1,6 @@
 package structural.facade.food;
 
-public class Sausage implements Edible{
+public class Sausage implements Edible {
 
     @Override
     public String getFood() {

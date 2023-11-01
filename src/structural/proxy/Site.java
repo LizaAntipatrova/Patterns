@@ -1,7 +1,5 @@
 package structural.proxy;
 
-import javax.security.auth.login.LoginContext;
-
 public class Site implements Loginable {
 
     @Override

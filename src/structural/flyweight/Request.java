@@ -1,9 +1,9 @@
 package structural.flyweight;
 
 public class Request {
-    private SlimeType type;
-    private int x;
-    private int y;
+    private final SlimeType type;
+    private final int x;
+    private final int y;
 
     public Request(SlimeType type, int x, int y) {
         this.type = type;

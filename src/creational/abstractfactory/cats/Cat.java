@@ -1,11 +1,11 @@
 package creational.abstractfactory.cats;
 
 public class Cat {
-    private String tail;
-    private String color;
-    private String face;
-    private String ears;
-    private String furLength;
+    private final String tail;
+    private final String color;
+    private final String face;
+    private final String ears;
+    private final String furLength;
 
 
     public Cat(String tail, String color, String face, String ears, String furLength) {

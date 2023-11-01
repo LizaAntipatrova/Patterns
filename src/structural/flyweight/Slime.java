@@ -4,8 +4,13 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Slime {
-    private String nameFile;
-    private String color;
+    private final String nameFile;
+    private final String color;
+
+    public Slime(SlimeType slimeType) {
+        this.color = slimeType.color;
+        this.nameFile = slimeType.nameFile;
+    }
 
     public String getNameFile() {
         return nameFile;
@@ -13,11 +18,6 @@ public class Slime {
 
     public String getColor() {
         return color;
-    }
-
-    public Slime(SlimeType slimeType) {
-        this.color = slimeType.color;
-        this.nameFile = slimeType.nameFile;
     }
 
     public JPanel draw(JPanel panel, int x, int y) {

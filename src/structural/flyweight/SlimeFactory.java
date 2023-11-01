@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SlimeFactory {
-    private static List<Slime> slimes = new ArrayList<>();
+    private static final List<Slime> slimes = new ArrayList<>();
 
     public static List<Slime> getSlimes() {
         return slimes;

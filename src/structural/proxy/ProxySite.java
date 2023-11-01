@@ -1,12 +1,9 @@
 package structural.proxy;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class ProxySite implements Loginable {
 
-    private Loginable site;
-    private String password;
+    private final Loginable site;
+    private final String password;
 
     public ProxySite(Loginable site, String password) {
         this.site = site;

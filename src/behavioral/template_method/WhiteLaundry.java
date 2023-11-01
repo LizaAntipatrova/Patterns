@@ -1,6 +1,6 @@
 package behavioral.template_method;
 
-public class WhiteLaundry extends LaundryThings{
+public class WhiteLaundry extends LaundryThings {
 
 
     @Override

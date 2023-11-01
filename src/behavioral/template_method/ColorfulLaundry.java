@@ -1,6 +1,6 @@
 package behavioral.template_method;
 
-public class ColorfulLaundry extends LaundryThings{
+public class ColorfulLaundry extends LaundryThings {
     @Override
     public void setMode() {
         System.out.println("Set colorful washing mode");
